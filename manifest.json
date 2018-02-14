@@ -1,0 +1,30 @@
+{
+
+  "manifest_version": 2,
+  "name": "BookIt",
+  "version": "0.0.1",
+
+  "description": "Changes the new tab page's content with a categorized version of the browser's bookmarks",
+  "homepage_url": "https://github.com/Shobs/BookIt",
+  "icons": {
+    "48": "icons/favorite-48.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "bookmarks"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/favorite-32.png",
+    "default_title": "BookIt",
+    "default_popup": "popup/bookmark_it.html"
+  }
+
+  // "web_accessible_resources": [
+  //   "beasts/frog.jpg",
+  //   "beasts/turtle.jpg",
+  //   "beasts/snake.jpg"
+  // ]
+
+}
