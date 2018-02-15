@@ -30,14 +30,15 @@
       html += '<li>';
         if(typeof(data[item].children) === 'object'){ // An array will return 'object'
           if(isChild){
-            html += '<a href="' + data[item].url + '">' + data[item].name + '</a>';
+            html += '<a href="' + data[item].url + '">' + data[item].title + '</a>';
           } else {
-                html += data[item].id; // Child found, but top level list item.
+                html += data[item].title; // Child found, but top level list item.
               }
             html += buildList(data[item].children, true); // Child found. Calling recursively same method (and wrapping it in a div)
           } else {
-            html += data[item].id // No Child
+            html += '<a href="' + data[item].url + '"><img src="'+ data[item].icon+ '"></img><h3>' + data[item].title + '</h3><p>'+data[item].url+'</p></a>' // No Child
           }
+
           html += '</li>';
         }
         html += '</ul>';
