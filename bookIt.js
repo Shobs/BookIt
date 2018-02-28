@@ -36,7 +36,7 @@
               }
             html += buildList(data[item].children, true); // Child found. Calling recursively same method (and wrapping it in a div)
           } else {
-            html += '<a href="' + data[item].url + '"><img src="'+ data[item].icon+ '"></img><h3>' + data[item].title + '</h3><p>'+data[item].url+'</p></a>' // No Child
+            html += '<a href="' + data[item].url + 'favicon.ico'+ '"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url='+ data[item].url + '"></img><h3>' + data[item].title + '</h3><p>'+data[item].url+'</p></a>' // No Child
           }
 
           html += '</li>';
